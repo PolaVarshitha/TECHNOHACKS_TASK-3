@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <article>
+            <div>
+                <h1>REGISTER</h1>
+            </div>
+            
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="uname" placeholder="Enter your name" pattern="(?=.*[A,Z])(?=.*[a,z]).{6,}" title="Minimum 10 characters" required>
+            </div>
+
+            <div>
+                <label for="pwd">password</label>
+                <input type="password" id="pwd" placeholder="Enter password" pattern="(?=.*[a,z])(?=.*[0,9]).{10,}"title="Minimum 8 characters"  required>
+            </div>
+
+            <div>
+                <label for="pwd">confirm password</label>
+                <input type="password" id="pwd" placeholder="Confirm password" pattern="(?=.*[a,z])(?=.*[0,9]).{10,}"title="Minimum 8 characters"  required>
+            </div>
+
+            </div>
+
+            <div>
+                <label for="mail">Email</label>
+                <input type="Email" id="mail" placeholder="Enter Email" pattern="[a-z]+@[a-z]+\.[a-z]{2,}">
+            </div>
+
+            <div>
+                <label for="address">Address</label>
+                <input type="Address" id="address" placeholder="Enter your address" pattern="[a-z]+@[a-z]+\.[a-z]{2,}">
+            </div>
+
+            <div class="radio">
+                <label for="gender">Gender</label>
+                <span>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="man">Male</label>
+
+                </span>
+
+                <span>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="woman">Female</label>
+                </span>
+            </div>
+            
+            <div>
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" placeholder="Enter date of birth" required>
+            </div>
+
+            <div>
+                <label for="ph no">contact</label>
+                <input type="text" id="ph no" placeholder="Enter contact number" min="10" required>
+            </div>
+
+           
+            <div class="login">
+                <button>Submit</button>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
